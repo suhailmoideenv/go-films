@@ -1,0 +1,11 @@
+<div class="row" style="margin-bottom: 2em;">
+    <h1>GO-FILMS</h1>
+
+    <a class="myButton" (click)="createFilms()">Create Film</a>
+</div>
+<div class="row">
+    <div *ngFor="let item of this.filmsList" style="display: inline-block">
+        <img src="{{item.photo}}" alt="" (click)="getFilmDetails(item)"
+            style="cursor: pointer;max-width: 500px;max-height: 500px;">
+    </div>
+</div>
