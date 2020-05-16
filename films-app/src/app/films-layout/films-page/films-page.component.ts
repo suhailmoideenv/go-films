@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ApiService } from 'src/app/shared/services/api.service';
 import { Router } from '@angular/router';
+import { LoginComponent } from '../login/login.component';
+import { LoginService } from 'src/app/shared/services/api.login';
 
 @Component({
   selector: 'app-films-page',
@@ -11,7 +13,7 @@ import { Router } from '@angular/router';
 export class FilmsPageComponent implements OnInit {
 
   filmsList;
-  constructor(private apiService: ApiService, private router:Router) { }
+  constructor(private apiService: ApiService, private router: Router, private loginService: LoginService) { }
 
   ngOnInit(): void {
     this.getAllFilmsList();
@@ -27,11 +29,19 @@ export class FilmsPageComponent implements OnInit {
   }
 
   getFilmDetails(filmDetails) {
-    this.router.navigate(['/films',filmDetails.name])
+    this.router.navigate(['/films', filmDetails.name])
   }
 
-  createFilms(){
+  createFilms() {
     this.router.navigate(['/films/create'])
+  }
+
+  loginScreen(){
+    this.router.navigate(['/films/login'])
+  }
+
+  registerScreen(){
+    this.router.navigate(['/films/register'])
   }
 
 }

@@ -2,6 +2,9 @@
     <h1>GO-FILMS</h1>
 
     <a class="myButton" (click)="createFilms()">Create Film</a>
+
+    <a class="myButton" (click) = loginScreen()>Login</a>
+    <a class="myButton" (click) = registerScreen()>Register</a>
 </div>
 <div class="row">
     <div *ngFor="let item of this.filmsList" style="display: inline-block">

@@ -52,12 +52,12 @@ module.exports.getFilmDetails = function (req, res) {
 
 
 module.exports.updateComments = function (req, res) {
-    Films.findById(req.id, function (err, films) {
+    Films.findById(req.body.id, function (err, films) {
         if (err) { console.log(err); }
-        // films.comments.push(req.comments);
-        // films.save((err, result) => {
-        //     if (err) { console.log(err) }
-        //     else { res.json(result) }
-        // })
+        films.comments.push(req.body.comments);
+        films.save((err, result) => {
+            if (err) { console.log(err) }
+            else { res.json(result) }
+        })
     })
 }
