@@ -24,4 +24,7 @@ Following are the tech stack used for the application developement:
 3. Mongo DB
 
 
+This is a quick project, developed in a span of 2 days, with a total effort of 10 hours
+
+
 For More Details: https://en.wikipedia.org/wiki/Draft:GO_FILMS_APPLICATION
