@@ -1,27 +1,26 @@
-# FilmsApp
+G0 Films:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+Overview:
 
-## Development server
+This Application developed with pure mean stack is to show list of films, with option to view details and provision to comment on films. User authentication is enabled with registration page. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Screens:
 
-## Code scaffolding
+Films:
+View List of Films
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Films Create:
 
-## Build
+To create a new film
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Films Details:
 
-## Running unit tests
+To View the details of the film along with comments
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Login:
 
-## Running end-to-end tests
+User Login Screen
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Registration:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+User Registration Screen
