@@ -16,10 +16,11 @@ Following are the main features in the application:
 4. Create Films
 5. Show Film Details
 6. Comment on Films
+7. Only Logged In Users can Comment
 
 Following are the tech stack used for the application developement:
 
-1. Angular 8
+1. Angular 9
 2. Nodejs + Express js
 3. Mongo DB
 
