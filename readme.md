@@ -20,7 +20,7 @@ Following are the main features in the application:
 
 Following are the tech stack used for the application developement:
 
-1. Angular 8
+1. Angular 9
 2. Nodejs + Express js
 3. Mongo DB
 
