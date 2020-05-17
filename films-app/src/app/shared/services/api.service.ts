@@ -22,4 +22,8 @@ export class ApiService {
     saveFilmDetails(filmObj) {
         return this.http.post(this.rootUrl + 'save', filmObj)
     }
+
+    updateFilmComments(filmObj) {
+        return this.http.post(this.rootUrl + 'update/comments', filmObj)
+    }
 }

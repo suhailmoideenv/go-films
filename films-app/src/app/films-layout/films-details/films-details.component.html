@@ -1,7 +1,7 @@
 <div class="outer">
 
     <div class="card">
-        
+
         <div>
             <img src={{this.filmDetails.photo}} alt="Avatar" style="width:500px;height: 700px;">
             <div class="container">
@@ -38,6 +38,13 @@
                     <span>
                         {{this.filmDetails.Genre}}
                     </span>
+                </div>
+
+                <div style="margin-top:2em;">
+                    <textarea name="comment" rows=5 [(ngModel)]=filmComment>Enter comment here...</textarea>
+                </div>
+                <div style="margin-top:1em;">
+                    <a class="myButton" (click) = postFilmComments()>Comment</a>
                 </div>
             </div>
         </div>

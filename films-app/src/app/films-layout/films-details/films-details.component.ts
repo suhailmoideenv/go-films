@@ -13,6 +13,8 @@ export class FilmsDetailsComponent implements OnInit {
   filmDetails;
   filmName;
 
+  filmComment;
+
   constructor(private router: Router, private apiService: ApiService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -27,6 +29,20 @@ export class FilmsDetailsComponent implements OnInit {
       const response: any = res;
       this.filmDetails = response;
       console.log(this.filmDetails);
+    })
+  }
+
+  postFilmComments() {
+    if (!localStorage.getItem('isLoggedin')) {
+      this.router.navigate(['/films/login']);
+    }
+    var filmsObj = { 'id': this.filmDetails._id, 'comments': { 'userId': 'suhailvm@gmail.com', 'comment': this.filmComment } }
+    this.apiService.updateFilmComments(filmsObj).subscribe(res => {
+      const response: any = res;
+      if (response._id) {
+        console.log('comments added');
+        this.getFilmDetails(this.filmName);
+      }
     })
   }
 
