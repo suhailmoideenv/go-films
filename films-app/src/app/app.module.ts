@@ -21,5 +21,6 @@ import { FilmsLayoutModule } from './films-layout/films-layout.module';
   ],
   providers: [],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }

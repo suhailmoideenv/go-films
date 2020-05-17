@@ -7,6 +7,7 @@ import { FilmsDetailsComponent } from './films-details/films-details.component';
 import { FilmsCreateComponent } from './films-create/films-create.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 
@@ -14,7 +15,9 @@ import { RegisterComponent } from './register/register.component';
   declarations: [FilmsPageComponent, FilmsDetailsComponent, FilmsCreateComponent, LoginComponent, RegisterComponent],
   imports: [
     CommonModule,
-    FilmsLayoutRoutingModule
+    FilmsLayoutRoutingModule,
+    FormsModule, 
+    ReactiveFormsModule
   ]
 })
 export class FilmsLayoutModule { }

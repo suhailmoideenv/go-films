@@ -1,1 +1,19 @@
-<p>register works!</p>
+<form class="modal-content animate" [formGroup]="regForm">
+
+    <div class="container">
+        <label for="uname"><b>User Name</b></label>
+        <input type="text" placeholder="Enter User Name" formControlName="uname" required>
+
+        <label for="uname"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email Id" formControlName="uemail" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" formControlName="psw" required>
+
+        <button type="submit" (click) = registerUser();>Register</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+    </div>
+</form>
