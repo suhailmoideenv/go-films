@@ -12,6 +12,7 @@ Following are the main features in the application:
 
 1. User Registration
 2. User Login
+3. User Authorisation
 3. Get Films List Page
 4. Create Films
 5. Show Film Details
